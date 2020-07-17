@@ -6,6 +6,7 @@ body {
     background-color: #242423;
     color: #e8eddf;
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
 }
 
 .lightmode {
@@ -36,8 +37,10 @@ ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 0;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 button {
@@ -111,9 +114,14 @@ a.nav-link {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    padding: 0;
 }
 
 /* Mode Switch */
+
+#mode {
+    display: flex;
+}
 
 .switch {
     position: relative;
@@ -146,7 +154,7 @@ a.nav-link {
     height: 26px;
     width: 26px;
     left: 6px;
-    bottom: 6px;
+    bottom: 5px;
     background-color: #e8eddf;
     -webkit-transition: .4s;
     transition: .4s;
@@ -157,7 +165,7 @@ input {
 }
 
 input:checked + .slider {
-    background-color: #AEC2B8;
+    background-color: #242423;
 }
 
 input:focus + .slider {
@@ -172,10 +180,24 @@ input:checked + .slider::before {
 
 .slider.round {
     border-radius: 34px;
+    z-index: 1;
 }
 
 .slider.round::before {
     border-radius: 50%;
+}
+
+#moon-ico {
+    position: absolute;
+    left: 35px;
+    bottom: 6px;
+    z-index: -1;
+}
+
+#sun-ico {
+    position: absolute;
+    left: 8px;
+    bottom: 6px;
 }
 
 /* Responsive Design */

@@ -11,8 +11,9 @@ function toggleMode() {
 function textCopy(ele, id) {
 
     const icoEle = ele.querySelector('svg');
+
     //DEBUG
-    console.log(icoEle);
+    // console.log(icoEle);
     //
     
     icoEle.classList.add('fade');
@@ -22,8 +23,9 @@ function textCopy(ele, id) {
     }, 1000);
     
     const copyText = document.getElementById(id);
+    
     //DEBUG
-    console.log(copyText);
+    // console.log(copyText);
     //
     
     copyText.style.display = "inline";
