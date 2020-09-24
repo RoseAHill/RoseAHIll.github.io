@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap');
+
+body {
+    background-color: #011627;
+    color: #FDFFFC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Galada', cursive;
+    margin-top: 10px;
+    font-size: 3em;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+#results {
+    min-width: 300px;
+    text-align: center;
+}
+
+#stats {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    min-width: 40%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#inputbtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-ico{
+    width: 32px;
+    height: 32px;
+}
+
+.game-ico {
+    width: 192px;
+    height: 192px;
+}
+
+.ico-circle {
+    z-index: -1;
+}
+
+.game-ico:hover .ico-circle {
+    fill: rgb(127, 139, 146, 1);
+    animation: grow .4s forwards ease-in;
+}
+
+.game-ico:hover::after .ico-circle {
+    animation: grow .3s backwards ease-in;
+}
+
+#control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#win-msg {
+    font-family: 'Galada', cursive;
+    font-size: 4em;
+}
+
+@keyframes grow{
+    from {
+        fill: rgb(127, 139, 146, 0);
+    }
+    to {
+        r: 50%;
+    }
+}

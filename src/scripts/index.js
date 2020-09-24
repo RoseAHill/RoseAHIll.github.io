@@ -6,16 +6,15 @@ function toggleMode() {
     bodyElm.classList.toggle("lightmode");
 }
 
+/* Text handler */
+
 /* Copy handler */
 
 function textCopy(ele, id) {
-
     const icoEle = ele.querySelector('svg');
-
     //DEBUG
     // console.log(icoEle);
     //
-    
     icoEle.classList.add('fade');
 
     setTimeout(() => {
@@ -23,11 +22,9 @@ function textCopy(ele, id) {
     }, 1000);
     
     const copyText = document.getElementById(id);
-    
     //DEBUG
     // console.log(copyText);
     //
-    
     copyText.style.display = "inline";
     copyText.select();
 
@@ -38,7 +35,6 @@ function textCopy(ele, id) {
     } catch (err) {
         console.log('Unable to copy text...');
     }
-
     copyText.style.display = "none";
 }
 

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #020122;
+    background-color: #E8F1F2;
+    margin: 0;
+    text-align: center;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #020122;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: #FF521B;
+}
+
+/* Header Style */
+
+.hdr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E8F1F2;
+    box-shadow: 5px 1px 8px grey;
+    padding: .5em .5em .5em 0;
+    z-index: 2;
+}
+
+.hdr a {
+    display: inline;
+    font-size: 1.1em;
+    margin: 1.5em;
+    margin-right: 0;
+}
+
+#logo-text {
+    padding-right: .5em;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    color: #157a6e;
+}
+
+#burger svg {
+    max-width: 2em;
+    max-height: 2em;
+    margin-left: 2em;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+/* Content Style */
+
+.content {
+    width: 100%;
+    display: inline-flex;
+}
+
+#wip {
+    font-size: 5em;
+}
+
+/* Slide Menu */
+
+    /* User Card */
+
+#info-card  {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 0 2em;
+}
+
+    /* Slide Menu Buttons */
+.slide-menu {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#options li {
+    border-bottom: 1px solid #499f68;
+    width: 100%;
+}
+
+input, button .slide-btn {
+    border: none;
+    width: 100%;
+    padding: 2em;
+    background-color: inherit;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.slide-btn:focus {
+    outline: none !important;
+    border: 1px soild #157a6e;
+    box-shadow: 2px 0px 6px lightgray;
+}
+
+/* Main Content */
+
+#main-content {
+    width: 100%;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
