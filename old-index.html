@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="/src/styles/old-index.css">
+</head>
+<body>
+    <div class="hdr-cont">
+        <section id="nav-bar">
+            <div id="title-switch">
+                <h1 id="main-title">Rose's Portfolio</h1>
+                <div id="mode">
+                    <label class="switch">
+                        <input type="checkbox" name="color-mode" id="color-mode" onclick="toggleMode();">
+                        <span class="slider round">
+                            <svg xmlns="http://www.w3.org/2000/svg" id="sun-ico" viewBox="0 0 512 512" style="height: 24px; width: 24px;"><g class="" transform="translate(0,0)" style="touch-action: none;">
+                                <path d="M135.563 17.5c-16.394-.215-25.532 15.656-25.532 15.656L63 144.562l26 15 72.97-96.406s15.012-26-10.97-41c-5.683-3.28-10.847-4.596-15.438-4.656zm219.656 13.22c-9.124.072-16.47 4.31-16.47 4.31L112.437 183l15 26L368.75 86.97S394.72 71.98 379.72 46c-7.033-12.18-16.452-15.346-24.5-15.28zM16 166v180a90 90 0 0 0 0-180zm435 45l-315 30v30l315 30s45 0 45-45-45-45-45-45zm-323.563 92l-15 26L338.75 476.97s25.97 15.012 40.97-10.97-10.97-40.97-10.97-40.97L127.437 303zM89 352.438l-26 15 47.03 111.406s14.99 25.97 40.97 10.97c25.982-15.002 10.97-40.97 10.97-40.97L89 352.438z" fill="#e8eddf" fill-opacity="1"></path></g>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="moon-ico" viewBox="0 0 512 512" style="height: 24px; width: 24px;"><g class="" transform="translate(0,0)" style="touch-action: none;"><g>
+                                <path d="M229.187 70.656C269.704 70.656 307.175 83.56 337.719 105.469C332.122 104.845 326.417 104.499 320.655 104.499C236.498 104.499 168.28 172.749 168.28 256.905C168.28 341.062 236.5 409.28 320.656 409.28C326.418 409.28 332.123 408.967 337.719 408.344C307.174 430.254 269.703 443.156 229.186 443.156C126.206 443.156 42.906 359.884 42.906 256.906C42.906 153.929 126.206 70.656 229.186 70.656Z" class="" fill="#242423" fill-opacity="1"></path></g></g>
+                            </svg>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <div class="nav-btns">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div id="content">
+        <section id="about">
+            <h1 id="abt-title">About Rose</h1>
+            <div id="about-txt">
+                <!-- <img src="./src/assets/home/aboutRose.jpg" alt="Photo of Rose"> -->
+                <p class="hid-abt">Rose is a self-driven, self-taught web developer. She started dabbling in programming in high school, and got serious about it around 2014. After settling on making it a career a year later, she continuiously works hard to perfect her craft.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h1 id="proj-title">Project Highlights</h2>
+                <div class="projs flex">
+                    <div class="fk-ggl item">
+                        <a href="./projects/fake-google.html"><img src="./src/assets/fake-google/googlescreen.png" alt="Fake Google Project"></a>
+                        <h3 class="proj-name">Fake Google Page</h3>
+                        <a href="https://github.com/RoseAHill/RoseAHIll.github.io/blob/master/projects/fake-google.html">Source Code</a>
+                    </div>
+                    <div class="rk-pp-sc item">
+                        <a href="./projects/rps.html"><img src="./src/assets/rps/rpsscreen.png" alt="RPS Project"></a>
+                        <h3 class="proj-name">Rock Paper Scissors</h3>
+                        <a href="https://github.com/RoseAHill/RoseAHIll.github.io/blob/master/projects/rps.html">Source Code</a>
+                    </div>
+                </div>
+        </section>
+        <section id="contact">
+            <h1 id="contact-title">Contact</h2>
+            <ul id="cnt-links">
+                <li id="cnt-email">
+                    <a href="mailto:RoseAranagaHill@gmail.com">
+                        <svg class="cnt-ico" height="128px" width="128px" viewBox="0 0 512 400" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m256 345.944c-3.157 0-6.314-.994-8.976-2.982l-157.024-117.279v225.317h332v-225.317l-157.024 117.28c-2.662 1.987-5.819 2.981-8.976 2.981z"/><path d="m60 203.276-60-44.813v247.537c0 24.813 20.187 45 45 45h15z"/><path d="m452 203.276v247.724h15c24.813 0 45-20.187 45-45v-247.537z"/></g><g><path d="m442.02 61h-372.041l186.021 138.785z"/><path d="m486.33 65.371-221.36 165.152c-2.661 1.985-5.815 2.977-8.97 2.977s-6.309-.992-8.97-2.977l-221.36-165.152c-15.166 7.245-25.67 22.732-25.67 40.629v16.843c2.118.424 4.179 1.296 6.024 2.675l249.976 186.704 249.976-186.704c1.845-1.378 3.906-2.251 6.024-2.675v-16.843c0-17.897-10.504-33.385-25.67-40.629z"/></g></g></svg>
+                    </a>
+                    <button class="copy-btn" onclick="textCopy(this, 'email');">
+                        <svg class="copy-ico" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="13" rx="2" ry="2" width="13" x="9" y="9"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                    </button>
+                    <input type="text" name="email" id="email" class="copy-able" value="RoseAranagaHill@gmail.com">
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rose-aranaga-hill-30a310172/" id="cnt-lnk" target="_blank">
+                        <svg class="cnt-ico" height="128px" width="128px" viewBox="0 0 512 512"><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm-74.390625 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></svg>
+                    </a>
+                    <button class="copy-btn"onclick="textCopy(this, 'lnk');">
+                        <svg class="copy-ico" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="13" rx="2" ry="2" width="13" x="9" y="9"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                    </button>
+                    <input type="text" name="email" id="lnk" class="copy-able" value="www.linkedin.com/in/rose-aranaga-hill-30a310172">
+                </li>
+                <li>
+                    <a href="https://github.com/RoseAHill" id="cnt-git" target="_blank">
+                        <svg class="cnt-ico" height="128px" width="128px" viewBox="0 0 512 512"><path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/></svg>
+                    </a>
+                    <button class="copy-btn" onclick="textCopy(this, 'git');">
+                        <svg class="copy-ico" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <rect height="13" rx="2" ry="2" width="13" x="9" y="9"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                        </svg>
+                    </button>
+                    <input type="text" name="email" id="git" class="copy-able" value="github.com/RoseAHill">
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div id="ftr"></div>
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
