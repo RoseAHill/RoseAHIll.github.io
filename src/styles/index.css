@@ -17,39 +17,43 @@ html, body {
     margin: 0 ;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
+    justify-content: space-around;
 }
 
 body {
     position: relative;
     height: 100%;
-    padding: 0 0 1rem 0;
+
 }
 
 header {
     height: 80%;
-    margin: 1rem 1rem 1rem 0 ;
+    top: 0;
+    margin: 2rem 2rem 0 0;
     background-image: radial-gradient(at 150% 0, white, var(--bg-yellow));
-    border-right: solid 1rem var(--bg-red);
-    border-top: solid 1rem var(--bg-red);
-    border-bottom: solid 1rem var(--bg-red);
-    box-shadow: 1rem -1rem 0 2rem var(--bg-orange);
+    box-shadow: 0 0 0 1.25rem var(--bg-red), 0 0 0 2.5rem var(--bg-orange);
     z-index: -1;
 }
 
 h1, h2, h3 {
+    color: var(--bg-orange);
     font-family: var(--font-header);
     margin: 0;
-    color: var(--bg-orange);
-    font-size: 5vh;
+    font-size: 3rem;
 }
 
-h1, h2{
-    font-size: 10vh;
-    padding: 1rem 2rem;
+h1{
+    font-size: 6rem;
+    padding: 0 2rem 0;
     letter-spacing: .2rem;
+    position: absolute;
+    z-index: 1;
 }
-
+h2 {
+    font-size: 5rem;
+    padding-left: 0.5rem;
+}
 
 div {
     display: flex;
@@ -57,11 +61,18 @@ div {
     width: 40%;
 }
 
+p {
+    font-size: 2vh;
+}
+
 .color-shadow {
     text-shadow: -.05em .05em var(--bg-red);
 }
+
 #about{
-    margin: 5vh 0 0 20vw;
+    position: relative;
+    top:20vh;
+    margin: 2vh auto;
     padding: 3vh 3vw;
     background-color: white;
     border-radius: 3rem;
@@ -70,33 +81,116 @@ div {
     box-shadow: -1rem 0.5rem 0 0 var(--bg-red);
 }
 
+#contacts {
+    background-color: white;
+    padding: 0 auto;
+    width: 60%;
+    height: fit-content;
+    margin: 0 auto 0;
+    position: relative;
+    bottom: 15vh;
+    border-radius: 2rem 2rem 0 0;
+    text-align: center;
+}
+
 #contact-icos {
     flex-direction: row;
-    margin: 0 auto;
-    width: 50%;
+    margin: 0;
+    width: 100%;
     justify-content: space-between;
+    display: block;
+    position: relative;
+    bottom: 0;
+    padding-top: 2rem;
 }
 
 #contact-icos>a>img {
-    height: 100px;
+    height: 12vh;
+    padding: 0 1rem;
 }
 
 #top-img {
     position: absolute;
     right: -2rem;
-    top: -1rem;
-    border-radius: 0 0 0 200px;
-    border-left: solid 2rem var(--bg-orange);
-    border-bottom: solid 2rem var(--bg-orange);
+    top: -2rem;
+    border-radius: 0 0 0 25rem;
+    background-color: var(--bg-orange);
+    border: solid 2rem var(--bg-orange);
     box-shadow: -2rem 2rem 0 -1rem var(--bg-red);
 }
 
-#contacts {
-    background-color: white;
-    margin: -22vh auto;
-    width: 75%;
-    border-radius: 2rem 2rem 0 0;
-    text-align: center;
-    /* box-shadow:  1rem 1rem 0 0 var(--bg-transparent); */
-    /* border-left: solid 4px var(--bg-orange); */
+#small {
+    display: none;
+}
+
+.shadow {
+    box-shadow: 1rem 1rem 0 0rem var(--bg-transparent);
+}
+
+@media screen and (max-width:780px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2rem 0 0 ;
+        box-shadow: 0 0 0 1.25rem var(--bg-red), 0 0 0 2.5rem var(--bg-orange);
+        overflow: auto;
+        box-shadow: 0 0 0 1.25rem var(--bg-red), 0 0 0 2.5rem var(--bg-orange);
+    }
+    header {
+        position: relative;
+        background: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    h3 {
+        font-size: 10vw;
+    }
+    h1 {
+        top: auto;
+        font-size: 15vw;
+        position: relative;
+    }
+    #contacts {
+        text-align: left;
+        padding: 0 1rem;
+        width: 100%;
+    }
+    #contacts > * {
+        padding-left: 0 1rem;
+        font-size: 10vw;
+    }
+    .top-img {
+        display: none;
+    }
+    #about {
+        position: relative;
+        top: unset;
+        margin: 0;
+        left: 5%;
+        width: 85%;
+        border: none;
+    }
+    #contact-icos {
+        flex-direction: column;
+    }
+    .shadow {
+        box-shadow: none;
+    }
+    #about {
+        border-left: none;
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width:430px){
+    h1 {
+        display: none;
+    }
+    #contacts {
+        border-radius: 0;
+    }
+    #small {
+        display: unset;
+    }
 }
