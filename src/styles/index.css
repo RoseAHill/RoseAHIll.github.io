@@ -124,7 +124,7 @@ p {
 }
 
 .shadow {
-    box-shadow: 1rem 1rem 0 0rem var(--bg-transparent);
+    box-shadow: 1rem 1rem .5rem 0rem var(--bg-transparent);
 }
 
 @media screen and (max-width:780px) {
