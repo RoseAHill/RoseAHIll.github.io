@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Sora:wght@800&display=swap');
+
+:root {
+  --colors-title: #55c5b5;
+  --colors-background: #f6dc7b;
+  --colors-body: #010101;
+  --colors-dark: #010101;
+  --colors-light: #f4f7f6;
+
+  --logo-js: #f7df1e;
+  --logo-html: #f06529;
+  --logo-css: #2965f1;
+  --logo-react: #61DBFB;
+  --logo-python: #FFD43B;
+  --logo-django: #092E20;
+  --logo-mongodb: #4db33d;
+  --logo-database: #336791;
+
+  --font-title: 'Sora', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--colors-body);
+  background: var(--colors-background);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4,
+.title-font {
+  font-family: var(--font-title);
+  color: var(--colors-title);
+}
+
+.skill-card {
+  width: 12rem;
+}
+
+.skill-card i, .django {
+  background-color: var(--colors-dark);
+}
+
+.fa-js {
+  color: var(--logo-js);
+}
+
+.fa-html5 {
+  color: var(--logo-html);
+}
+
+.fa-css3-alt {
+  color: var(--logo-css);
+}
+
+.fa-react {
+  color: var(--logo-react);
+}
+
+.fa-python {
+  color: var(--logo-python);
+}
+
+.django {
+  color: var(--logo-django);
+}
+
+.mongodb {
+  color: var(--logo-mongodb);
+}
+
+.fa-database {
+  color: var(--logo-database);
+}
