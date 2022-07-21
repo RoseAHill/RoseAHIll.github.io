@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./src/styles/styles.css">
   <title>Rosie A Hill</title>
 </head>
+
 <body class="fs-5">
   <nav class="navbar navbar-expand-lg px-4" aria-label="site navigation bar">
     <div class="container-fluid">
@@ -38,15 +39,17 @@
       <div class="col-lg-7 col-md-6 row-cols-1">
         <h1 class="display-2" aria-label="Full name">Rosie A Hill</h1>
         <p class="col-lg-8 col-xl-6" aria-label="Short description of skill set">
-          Software Engineer with a passion for code. Skilled with Javascript, HTML/CSS, Node.js, React, Python, relational and noSQL databases, and more.
+          Software Engineer with a passion for code. Skilled with Javascript, HTML/CSS, Node.js, React, Python,
+          relational and noSQL databases, and more.
         </p>
       </div>
-      <img class="headshot rounded col-xl-3 col-lg-5 col-md-6 col-sm-8 col-xs-1"
-        src="./src/assets/rosie.jpg" alt="Headshot of Rosie">
+      <img class="headshot rounded col-xl-3 col-lg-5 col-md-6 col-sm-8 col-xs-1" src="./src/assets/rosie.jpg"
+        alt="Headshot of Rosie">
     </section>
-    <section id="About" class="row container-fluid align-items-center justify-content-center py-4 mt-4 bg-light mx-0">
+    <section class="row container-fluid align-items-center justify-content-center py-4 mt-4 bg-light mx-0">
       <h2 class="display-4 text-center">Skills</h2>
-      <div id="Skills" class="skills-banner container-fluid row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4 align-content-center justify-content-center fs-1 mt-0">
+      <div id="Skills"
+        class="skills-banner container-fluid row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4 align-content-center justify-content-center fs-1 mt-0 mb-3">
         <div class="col justify-content-center align-content-center">
           <div class="card skill-card text-center mx-auto">
             <i class="fa-brands fa-js fa-2xl lh-base card-img-top"></i>
@@ -112,35 +115,24 @@
           </div>
         </div>
       </div>
+      <h2 class="display-4 text-center mt-4">About</h2>
+      <div id="About" class="about-banner container-fluid align-items-center justify-content-center">
+        <p class="col-lg-6 text mx-auto">
+          I grew up with a strong appreciation for tech. As soon as I learned that tech is a valid career path, I knew
+          that's what I wanted to do. Since graduating high school, I have self-taught, attended and completed the
+          bootcamp General Assembly, and started university. Currently I am a student of Computer Science at Montgomery
+          College. I plan on getting a Bachelors degree, with hopes to work towards a masters as well.
+          <br/> <br/>
+          I am an intelligent, dedicated individual who is determined to make a difference in the world. My long term 
+          goal is to become a pioneer in a subsection of the tech field, either accessible education or machine learning.
+        </p>
+      </div>
     </section>
   </main>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
-  <!-- <script>
-    const menuAnimation = [
-      { opacity: 100 },
-      { opacity: 0 }
-    ]
-    const menuAnimationTiming = {
-      duration: 200,
-      iterations: 1,
-    }
-    let navMenu = document.querySelector(".nav-menu")
-    const toggleNavMenu = () => {
-      if (navMenu.hasAttribute("mobileDisabled")) {
-        navMenu.toggleAttribute("mobileDisabled")
-        navMenu.animate(menuAnimation, { ...menuAnimationTiming, easing: "ease-in", direction: "reverse" })
-      } else {
-        navMenu.animate(menuAnimation, { ...menuAnimationTiming, easing: "ease-out", direction: "normal" })
-        setTimeout(() => {
-          navMenu.toggleAttribute("mobileDisabled")
-        }, 200);
-      }
-
-    }
-  </script> -->
 </body>
 
 </html>
